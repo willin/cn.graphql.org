@@ -19,7 +19,11 @@ export default ({ page, site }) =>
           <h1>开发</h1>
           <Marked>{`
 
+<<<<<<< HEAD
 GraphQL 支持许多不同的开发语言. 这个列表包含了一些更流行的服务器端框架,客户端库和一些有用的小东西.
+=======
+Many different programming languages support GraphQL. This list contains some of the more popular server-side frameworks, client libraries, services, and other useful stuff.
+>>>>>>> a1c831ecebc93a81818ac8ed6814042ce92cc136
 
 ## 服务器端库
 
@@ -402,7 +406,9 @@ Executor.execute(schema, query) map println
 
   - [Relay](https://facebook.github.io/relay/) ([github](https://github.com/facebook/relay)) ([npm](https://www.npmjs.com/package/react-relay)): Facebook 构建的与 GraphQL 后端通信的 React 应用程序框架.
   - [Apollo Client](http://dev.apollodata.com/react/) ([github](https://github.com/apollostack/apollo-client)): 强大的JavaScript GraphQL客户端, 旨在与React, React Native, Angular 2或简单的 JavaScript 一起工作.
+  - [graphql-request](https://github.com/graphcool/graphql-request): 以个简单可扩展的 Javascript GraphQL 客户端可以在任何 js 环境运行(包括浏览器, Node.js, 和 React Native) - 由轻量级 \`fetch\` 包裹而成.
   - [Lokka](https://github.com/kadirahq/lokka): 一个简单的JavaScript GraphQL客户端, 适用于所有JavaScript环境 - 浏览器, Node.js和React Native.
+  - [nanogql](https://github.com/yoshuawuyts/nanogql): 模块化精简的 GraphQL 客户端类库.
 
 ### Swift / Objective-C iOS
 
@@ -415,6 +421,15 @@ Executor.execute(schema, query) map println
   - [graphiql](https://github.com/graphql/graphiql) ([npm](https://www.npmjs.com/package/graphiql)): 一种交互式浏览器 GraphQL IDE.
   - [libgraphqlparser](https://github.com/graphql/libgraphqlparser): C/C++ API 查询解析器.
   - [Graphql Language Service](https://github.com/graphql/graphql-language-service): 构建 GraphQL 语言服务的交互IDE(包含诊断, 自动补全等).
+
+## Services
+
+  - [Apollo Optics](http://www.apollodata.com/optics/): 一个 GraphQL 后端性能和用量监控的服务.
+  - [GraphCMS](https://graphcms.com/): 一个基于 BaaS (Backend as a Service)和 GraphQL 的内容编辑和创作工具服务.
+  - [Graphcool](https://www.graph.cool) ([github](https://github.com/graphcool)): 一个基于 BaaS (Backend as a Service) 提供 GraphQL 应用后台的服务, 具有强大的管理Web UI界面.
+  - [Reindex](https://www.reindex.io/baas/) ([github](https://github.com/reindexio/reindex-js)): 一个基于 BaaS (Backend as a Service) 针对 React 和 Relay 的应用程序 GraphQL 后端服务.
+  - [Scaphold](https://scaphold.io) ([github](https://github.com/scaphold-io)): 一个基于 BaaS (Backend as a Service) 可以集成各种不同应用的 GraphQL 后端服务.
+
 
 ## 更多
 

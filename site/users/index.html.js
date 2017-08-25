@@ -516,6 +516,51 @@ var logos = [
     isRound: true,
     link: 'https://etmdb.com'
   },
+  {
+    name: 'GetNinjas',
+    img: 'getninjas.png',
+    link: 'https://labs.getninjas.com.br/tagged/graphql'
+  },
+  {
+    name: 'Dailymotion',
+    img: 'dailymotion.png',
+    link: 'https://developer.dailymotion.com/'
+  },
+  {
+    name: 'Myntra',
+    img: 'myntra.png',
+    link: 'https://www.myntra.com/'
+  },
+  {
+    name: 'Conduit',
+    img: 'conduit.png',
+    link: 'https://conduithq.com/'
+  },
+  {
+    name: 'Medallia',
+    img: 'medallia.png',
+    link: 'https://www.medallia.com/'
+  },
+  {
+    name: 'Colectica',
+    img: 'colectica.png',
+    link: 'http://www.colectica.com/'
+  },
+  {
+    name: 'Neo4j',
+    img: 'neo4j_logo.png',
+    link: 'https://www.neo4j.com/developer/graphql/'
+  },
+  {
+    name: 'ComparaOnline',
+    img: 'comparaonline.png',
+    link: 'https://www.comparaonline.com'
+  },
+  {
+    name: 'Goalify.plus',
+    img: 'goalify.png',
+    link: 'https://goalify.plus'
+  },
   // Adding your logo?
   // Add it to the /users/logos/ directory and then append an entry above this comment.
   //

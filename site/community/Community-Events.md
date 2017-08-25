@@ -8,6 +8,25 @@ sublinks: Upcoming Events,Meetups
 
 ## Upcoming Events
 
+### Relay Modern or Apollo?
+
+- **Conference:** ReactNext 2017
+- **Date:** 10th September, 2017
+- **Location:** Tel Aviv, Israel
+- **Link:** http://react-next.com
+
+New project starts. Everyone is excited. GraphQL is on the stack. Yay! Life is good! Suddenly someone pops the question. So which GraphQL Client should we use? What do you mean? Oh, nooo! =) Don’t worry I’ve got your back. In this talk I am going to put these two under the microscope and find out what are they best at, what features they share and, most importantly, what are their key differences! You can relax.
+
+### GraphQL Summit 2017
+
+- **Date:** 25-26 October, 2017
+- **Location:** San Francisco, CA, USA
+- **Link:** http://summit.graphql.com
+
+GraphQL Summit is a conference dedicated entirely to the GraphQL developer community. Speakers from all around the world will talk about GraphQL best practices, design patterns, adoption stories, GraphQL in production, and the open source ecosystem. This year there will be one track of talks over two days, as well as an afterparty and workshops. The CFP closes August 14, 2017 12:00AM PST.
+
+## Past Events
+
 ### Unleashing the power of GraphQL and React
 
 - **Conference:** OdessaJS 2017
@@ -17,9 +36,6 @@ sublinks: Upcoming Events,Meetups
 
 GraphQL is awesome! After only a year it has got a lot of attention from the community. Many implementations have emerged and it's just getting better. Is GraphQL right for you? Is it a query language or runtime? In this talk I am going to take you from 0 to hero. ;) 
 
-
-## Past Events
-
 ### GraphQL - The People's Query Language 
 
 - **Date:** 21st June, 2017
@@ -27,7 +43,6 @@ GraphQL is awesome! After only a year it has got a lot of attention from the com
 - **Link:** https://www.meetup.com/Node-js-Denver-Boulder/events/240482998/
 
 In this talk, we'll discuss the history and purpose of GraphQL, common misconceptions about GraphQL, and setting up GraphQL in a Node/Express back-end. We'll also take a look at GraphQL's development tool GraphiQL and how it self-documents your resources. If you're curious about GraphQL and how to make working with relational data a breeze, join us! 
-
 
 ### GraphQL-Europe Conference
 
@@ -56,6 +71,11 @@ Everyone is excited about Subscriptions, the new real-time GraphQL feature. Curi
 - [GraphQL & Relay (San Francisco)](http://www.meetup.com/graphql/)
 - [GraphQL Seattle](https://www.meetup.com/Seattle-GraphQL-Meetup/)
 - [GraphQL Toronto](https://www.meetup.com/GraphQL-Toronto/)
+- [GraphQL NYC](https://www.meetup.com/GraphQL-NYC/)
+- [GraphQL Atlanta](https://www.meetup.com/GraphQL-Atlanta/)
+- [GraphQL Austin](https://www.meetup.com/ATX-GraphQL/)
+- [GraphQL Miami](https://www.meetup.com/Miami-GraphQL/)
+- [GraphQL Los Angeles](https://www.meetup.com/Los-Angeles-GraphQL-Meetup/)
 
 ### Europe
 
@@ -64,10 +84,15 @@ Everyone is excited about Subscriptions, the new real-time GraphQL feature. Curi
 - [GraphQL Istanbul](https://www.meetup.com/GraphQL-Istanbul/)
 - [GraphQL London](https://www.meetup.com/GraphQL-London)
 - [GraphQL Paris](https://www.meetup.com/GraphQL-Paris/)
+- [GraphQL Munich](https://www.meetup.com/GraphQL-Munich/)
+- [GraphQL Barcelona](https://www.meetup.com/GraphQL-Barcelona/)
+- [GraphQL Stockholm](https://www.meetup.com/GraphQL-Stockholm/)
+- [GraphQL Budapest](https://www.meetup.com/Budapest-GraphQL/)
 
 ### Australia
 
 - [GraphQL Melbourne](http://graphql.melbourne/)
+- [GraphQL Sydney](https://www.meetup.com/GraphQL-Sydney/)
 
 ### Asia
 
