@@ -8,14 +8,21 @@
 
 安装项目依赖:
 
+<<<<<<< HEAD
 ```bash
 npm install
 # 或
 yarn
 ```
+=======
+The first time, get all the dependencies loaded via
+
+`$ npm install` or `$ yarn install`
+>>>>>>> source
 
 然后执行:
 
+<<<<<<< HEAD
 ```bash
 npm start
 # 打开 http://localhost:8444/
@@ -26,3 +33,13 @@ npm start
 ### 发布到网站
 
 `cn` 分支通过 Travis CI 自动部署到 https://graphql.js.cool/
+=======
+`$ npm start` or `$ yarn start`
+
+Open [http://localhost:8444](http://localhost:8444) to view it in the browser.
+Anytime you make some changes, refresh the page to see the updates.
+
+### Publish the Website
+
+Once pushed to the `source` branch, Travis CI will publish http://graphql.org
+>>>>>>> source

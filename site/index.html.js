@@ -20,7 +20,7 @@ module.exports = ({ page, section }) =>
 
         <section className="intro">
           <div className="named-logo">
-            <img src="/img/logo.svg" />
+            <img src="/img/logo.svg" alt="GraphQL Logo" />
             <h1>GraphQL</h1>
           </div>
 
@@ -304,9 +304,17 @@ type Species {
         <h2>使用强大的开发者工具来加快进度</h2>
         {/*Illustration of GraphiQL validation error and typeahead, animated?]*/}
         <p>
+<<<<<<< HEAD
           在开发编辑器中确切知道您可以从 API 请求哪些数据, 在发送查询请求之前高亮提示潜在问题, 并且有改进代码提示. 
           GraphQL 通过改善 API 类型系统, 使构建强大工具(如 <a href="https://github.com/graphql/graphiql" target="_blank">Graph<em>i</em>QL</a>)更加容易.
         </p>
+=======
+          Know exactly what data you can request from your API without
+          leaving your editor, highlight potential issues before sending a
+          query, and take advantage of improved code intelligence. GraphQL
+          makes it easy to build powerful tools like <a href="https://github.com/graphql/graphiql" target="_blank" rel="noopener">Graph<em>i</em>QL</a> by
+          leveraging your API&rsquo;s type system.</p>
+>>>>>>> source
       </div>
       <div className="graphiqlVid" dangerouslySetInnerHTML={{__html: `
         <video autoplay loop playsinline>

@@ -442,7 +442,7 @@ Enum values as strings, however internally Enums can be represented by any
 kind of type, often integers.
 
 Note: If a value is not provided in a definition, the name of the enum value
-will be used as it's internal value.
+will be used as its internal value.
 
 #### Example
 
@@ -461,7 +461,7 @@ var RGBType = new GraphQLEnumType({
 
 ```js
 class GraphQLInputObjectType {
-  constructor(config: GraphQLInputObjectTypeConfig)
+  constructor(config: GraphQLInputObjectConfig)
 }
 
 type GraphQLInputObjectConfig = {
@@ -530,8 +530,8 @@ an object type.
 var PersonType = new GraphQLObjectType({
   name: 'Person',
   fields: () => ({
-    parents: { type: new GraphQLList(Person) },
-    children: { type: new GraphQLList(Person) },
+    parents: { type: new GraphQLList(PersonType) },
+    children: { type: new GraphQLList(PersonType) },
   })
 });
 ```

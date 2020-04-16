@@ -3,7 +3,7 @@ title: Pagination
 layout: ../_core/DocsLayout
 category: Best Practices
 permalink: /learn/pagination/
-next: /learn/caching/
+next: /learn/global-object-identification/
 ---
 
 > Different pagination models enable different client capabilities
@@ -12,7 +12,7 @@ A common use case in GraphQL is traversing the relationship between sets of obje
 
 ## Plurals
 
-The most simple way to expose a connection between objects is with a field that returns a plural type. For example, if we wanted to get a list of R2-D2's friends, we could just ask for all of them:
+The simplest way to expose a connection between objects is with a field that returns a plural type. For example, if we wanted to get a list of R2-D2's friends, we could just ask for all of them:
 
 ```graphql
 # { "graphiql": true }
@@ -78,7 +78,7 @@ The concept of an edge also proves useful if there is information that is specif
 
 Now we have the ability to paginate through the connection using cursors, but how do we know when we reach the end of the connection? We have to keep querying until we get an empty list back, but we'd really like for the connection to tell us when we've reached the end so we don't need that additional request. Similarly, what if we want to know additional information about the connection itself; for example, how many total friends does R2-D2 have?
 
-To solve both of these problems, our `friends` field can return a connection object. The connection object will then have field for the edges, as well as other information (like total count and information about whether a next page exists). So our final query might look more like:
+To solve both of these problems, our `friends` field can return a connection object. The connection object will then have a field for the edges, as well as other information (like total count and information about whether a next page exists). So our final query might look more like:
 
 
 ```graphql
@@ -137,3 +137,6 @@ To see this in action, there's an additional field in the example schema, called
 }
 ```
 
+## Connection Specification
+
+To ensure a consistent implementation of this pattern, the Relay project has a formal [specification](https://facebook.github.io/relay/graphql/connections.htm) you can follow for building GraphQL APIs which use a cursor based connection pattern.

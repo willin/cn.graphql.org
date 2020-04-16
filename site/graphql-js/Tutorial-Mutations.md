@@ -27,11 +27,11 @@ Both mutations and queries can be handled by root resolvers, so the root that im
 ```javascript
 var fakeDatabase = {};
 var root = {
-  setMessage: function ({message}) {
+  setMessage: ({message}) => {
     fakeDatabase.message = message;
     return message;
   },
-  getMessage: function () {
+  getMessage: () => {
     return fakeDatabase.message;
   }
 };
@@ -112,20 +112,20 @@ class Message {
 var fakeDatabase = {};
 
 var root = {
-  getMessage: function ({id}) {
+  getMessage: ({id}) => {
     if (!fakeDatabase[id]) {
       throw new Error('no message exists with id ' + id);
     }
     return new Message(id, fakeDatabase[id]);
   },
-  createMessage: function ({input}) {
+  createMessage: ({input}) => {
     // Create a random id for our "database".
     var id = require('crypto').randomBytes(10).toString('hex');
 
     fakeDatabase[id] = input;
     return new Message(id, input);
   },
-  updateMessage: function ({id, input}) {
+  updateMessage: ({id, input}) => {
     if (!fakeDatabase[id]) {
       throw new Error('no message exists with id ' + id);
     }
@@ -165,28 +165,30 @@ You can use variables to simplify mutation client logic just like you can with q
 ```javascript
 var author = 'andy';
 var content = 'hope is a good thing';
-var xhr = new XMLHttpRequest();
-xhr.responseType = 'json';
-xhr.open("POST", "/graphql");
-xhr.setRequestHeader("Content-Type", "application/json");
-xhr.setRequestHeader("Accept", "application/json");
-xhr.onload = function () {
-  console.log('data returned:', xhr.response);
-}
 var query = `mutation CreateMessage($input: MessageInput) {
   createMessage(input: $input) {
     id
   }
 }`;
-xhr.send(JSON.stringify({
-  query: query,
-  variables: {
-    input: {
-      author: author,
-      content: content,
+
+fetch('/graphql', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  },
+  body: JSON.stringify({
+    query,
+    variables: {
+      input: {
+        author,
+        content,
+      }
     }
-  }
-}));
+  })
+})
+  .then(r => r.json())
+  .then(data => console.log('data returned:', data));
 ```
 
 One particular type of mutation is operations that change users, like signing up a new user. While you can implement this using GraphQL mutations, you can reuse many existing libraries if you learn about [GraphQL with authentication and Express middleware](/graphql-js/authentication-and-express-middleware/).

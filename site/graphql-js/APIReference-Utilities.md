@@ -52,7 +52,7 @@ var { introspectionQuery } = require('graphql'); // CommonJS
   <li>
     <a href="#printintrospectionschema">
       <pre>function printIntrospectionSchema</pre>
-      Prints the introspections featurs of the schema in a standard format.
+      Prints the introspection features of the schema in a standard format.
     </a>
   </li>
   <li>
@@ -92,13 +92,13 @@ var { introspectionQuery } = require('graphql'); // CommonJS
   <li>
     <a href="#isvalidjsvalue">
       <pre>function isValidJSValue</pre>
-      Determins if a JavaScript value is valid for a GraphQL type.
+      Determines if a JavaScript value is valid for a GraphQL type.
     </a>
   </li>
   <li>
     <a href="#isvalidliteralvalue">
       <pre>function isValidLiteralValue</pre>
-      Determins if a literal value from an AST is valid for a GraphQL type.
+      Determines if a literal value from an AST is valid for a GraphQL type.
     </a>
   </li>
 </ul>

@@ -10,5 +10,9 @@ var React = require('react');
 
 export default () =>
   <div className="algolia-search-wrapper">
+<<<<<<< HEAD
     <input id="algolia-search-input" type="text" placeholder="搜索文档..." />
+=======
+    <input id="algolia-search-input" type="text" placeholder="Search docs..." aria-label="Search docs" />
+>>>>>>> source
   </div>

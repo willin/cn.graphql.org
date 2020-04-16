@@ -28,7 +28,7 @@ So far, our resolver functions took no arguments. When a resolver takes argument
 
 ```javascript
 var root = {
-  rollDice: function (args) {
+  rollDice: (args) => {
     var output = [];
     for (var i = 0; i < args.numDice; i++) {
       output.push(1 + Math.floor(Math.random() * (args.numSides || 6)));
@@ -42,7 +42,7 @@ It's convenient to use [ES6 destructuring assignment](https://developer.mozilla.
 
 ```javascript
 var root = {
-  rollDice: function ({numDice, numSides}) {
+  rollDice: ({numDice, numSides}) => {
     var output = [];
     for (var i = 0; i < numDice; i++) {
       output.push(1 + Math.floor(Math.random() * (numSides || 6)));
@@ -70,7 +70,7 @@ var schema = buildSchema(`
 
 // The root provides a resolver function for each API endpoint
 var root = {
-  rollDice: function ({numDice, numSides}) {
+  rollDice: ({numDice, numSides}) => {
     var output = [];
     for (var i = 0; i < numDice; i++) {
       output.push(1 + Math.floor(Math.random() * (numSides || 6)));
@@ -106,21 +106,23 @@ For example, some JavaScript code that calls our server above is:
 ```javascript
 var dice = 3;
 var sides = 6;
-var xhr = new XMLHttpRequest();
-xhr.responseType = 'json';
-xhr.open("POST", "/graphql");
-xhr.setRequestHeader("Content-Type", "application/json");
-xhr.setRequestHeader("Accept", "application/json");
-xhr.onload = function () {
-  console.log('data returned:', xhr.response);
-}
 var query = `query RollDice($dice: Int!, $sides: Int) {
   rollDice(numDice: $dice, numSides: $sides)
 }`;
-xhr.send(JSON.stringify({
-  query: query,
-  variables: { dice: dice, sides: sides },
-}));
+
+fetch('/graphql', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  },
+  body: JSON.stringify({
+    query,
+    variables: { dice, sides },
+  })
+})
+  .then(r => r.json())
+  .then(data => console.log('data returned:', data));
 ```
 
 Using `$dice` and `$sides` as variables in GraphQL means we don't have to worry about escaping on the client side.
