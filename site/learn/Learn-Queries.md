@@ -4,11 +4,7 @@ layout: ../_core/DocsLayout
 category: Learn
 permalink: /learn/queries/
 next: /learn/schema/
-<<<<<<< HEAD
-sublinks: Fields 字段,Arguments 参数,Aliases 别名,Fragments 碎片,Variables 变量,Operation name 操作名,Directives 指令,Mutations 转变,Inline Fragments 行内碎片
-=======
 sublinks: Fields,Arguments,Aliases,Fragments,Operation Name,Variables,Directives,Mutations,Inline Fragments
->>>>>>> source
 ---
 
 在这一章节您将会学习如何向 GraphQL 服务器请求查询.
@@ -100,11 +96,7 @@ sublinks: Fields,Arguments,Aliases,Fragments,Operation Name,Variables,Directives
 
 ## Fragments 碎片
 
-<<<<<<< HEAD
-假设我们的应用程序里有一个复杂的页面, 让我们比较两位英雄和他们的朋友. 你可以想象这么一条查询语句可以蒜素实现这个复杂的请求, 因为我们需要将字段至少重复两次, 一个一个进行比较.
-=======
 Let's say we had a relatively complicated page in our app, which let us look at two heroes side by side, along with their friends. You can imagine that such a query could quickly get complicated, because we would need to repeat the fields at least once - one for each side of the comparison.
->>>>>>> source
 
 这就是为什么 GraphQL 提供了成为 _fragments (碎片)_ 的可重用单元. 碎片允许你构建一组字段, 然后在你的查询里需要的地方引用它们. 这里有一个示例, 用碎片来解决上述的情形:
 
@@ -130,9 +122,6 @@ fragment comparisonFields on Character {
 
 你可以看到上述查询中字段巧妙地进行了重复的使用. 碎片的概念经常用于将复杂的应用程序数据需求分解成更小的块, 尤其是在你需要合并 UI组件 中不同的碎片到一个初始化数据抓取时.
 
-<<<<<<< HEAD
-## Variables 变量
-=======
 ### Using variables inside fragments
 
 It is possible for fragments to access variables declared in the query or mutation. See [variables](#variables).
@@ -187,7 +176,6 @@ Think of this just like a function name in your favorite programming language.
 For example, in JavaScript we can easily work only with anonymous functions, but when we give a function a name, it's easier to track it down, debug our code, 
 and log when it's called. In the same way, GraphQL query and mutation names, along with fragment names, can be a useful debugging tool on the server side to identify 
 different GraphQL requests.
->>>>>>> source
 
 到目前为止, 我们一直在查询字符串中写入所有的参数. 但实际上大多数应用, 参数的字段可能是动态的. 例如, 可能会有一个下拉列表, 让你选择你所感兴趣的星球大战插曲, 或一个搜索字段, 或一组过滤器.
 
@@ -244,18 +232,7 @@ query HeroNameAndFriends($episode: Episode = JEDI) {
 
 When default values are provided for all variables, you can call the query without passing any variables. If any variables are passed as part of the variables dictionary, they will override the defaults. 
 
-<<<<<<< HEAD
-## Operation name 操作名
-
-One thing we also saw in the example above is that our query has acquired an _operation name_. Up until now, we have been using a shorthand syntax where we omit both the `query` keyword and the query name, but in production apps it's useful to use these to make our code less ambiguous.
-
-Think of this just like a function name in your favorite programming language. For example, in JavaScript we can easily work only with anonymous functions, but when we give a function a name, it's easier to track it down, debug our code, and log when it's called. In the same way, GraphQL query and mutation names, along with fragment names, can be a useful debugging tool on the server side to identify different GraphQL requests.
-
-
-## Directives 指令
-=======
 ## Directives
->>>>>>> source
 
 We discussed above how variables enable us to avoid doing manual string interpolation to construct dynamic queries. Passing variables in arguments solves a pretty big class of these problems, but we might also need a way to dynamically change the structure and shape of our queries using variables. For example, we can imagine a UI component that has a summarized and detailed view, where one includes more fields than the other.
 

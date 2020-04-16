@@ -9,14 +9,6 @@
 var React = require('react');
 
 const links = [
-<<<<<<< HEAD
-  { section: 'learn', text: '学习', href: '/learn/' },
-  { section: 'code', text: '代码', href: '/code/' },
-  { section: 'community', text: '社区', href: '/community/' },
-  { section: 'blog', text: '博客', href: '/blog/' },
-  { section: 'spec', text: '定义', href: 'http://facebook.github.io/graphql/' },
-  { section: 'bug', text: '翻译纠错', href: 'https://github.com/willin/graphql.js.cool/issues/1' },
-=======
   { section: 'learn', text: 'Learn', href: '/learn/' },
   { section: 'code', text: 'Code', href: '/code/' },
   { section: 'community', text: 'Community', href: '/community/' },
@@ -24,7 +16,6 @@ const links = [
   { section: 'codeofconduct', text: 'Code of Conduct', href: '/codeofconduct/' },
   { section: 'foundation', text: 'Foundation', href: 'https://foundation.graphql.org/' },
   { section: 'landscape', text: 'Landscape', href: 'https://l.graphql.org/' },
->>>>>>> source
 ];
 
 export default ({ section }) =>

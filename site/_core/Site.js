@@ -81,30 +81,14 @@ export default ({ page, category, title, section, className, noSearch, children 
             <a href="https://twitter.com/GraphQL" target="_blank" rel="noopener noreferrer">Twitter</a>
           </div>
           <div>
-<<<<<<< HEAD
-            <h5>更多</h5>
-            <a href="/blog">GraphQL 团队博客</a>
-            <a href="http://facebook.github.io/graphql/" target="_blank" rel="noopener noreferrer">阅读定义</a>
-            <a href="https://github.com/graphql" target="_blank" rel="noopener noreferrer">GitHub</a>
-            {page && <a href={'https://github.com/willin/graphql.js.cool/edit/cn/site/' + page.relPath} target="_blank" rel="noopener noreferrer">翻译该页面 &#x270E;</a>}
-=======
             <h5>More</h5>
             <a href="https://graphql.github.io/graphql-spec/" target="_blank" rel="noopener noreferrer">GraphQL Specification</a>
             <a href="https://foundation.graphql.org/" target="_blank" rel="noopener noreferrer">GraphQL Foundation</a>
             <a href="https://github.com/graphql" target="_blank" rel="noopener noreferrer">GraphQL GitHub</a>
             {page && <a href={'https://github.com/graphql/graphql.github.io/edit/source/site/' + page.relPath} target="_blank" rel="noopener noreferrer">Edit this page &#x270E;</a>}
->>>>>>> source
           </div>
         </section>
         <section className="copyright">
-<<<<<<< HEAD
-          Copyright &copy; 2016 Facebook Inc. The contents of this page are licensed BSD-3-Clause. <br/>
-          译者: <a href="https://willin.wang/" target="_blank">Willin Wang</a>
-        </section>
-      </footer>
-      <script src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
-      <script dangerouslySetInnerHTML={{__html: `
-=======
           Copyright © {`${new Date().getFullYear()}`} The GraphQL Foundation. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage">Trademark Usage</a> page. Linux is a registered trademark of Linus Torvalds. <a href="http://www.linuxfoundation.org/privacy">Privacy Policy</a> and <a href="http://www.linuxfoundation.org/terms">Terms of Use</a>.
         </section>
       </footer>
@@ -112,7 +96,6 @@ export default ({ page, category, title, section, className, noSearch, children 
       <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
       <script dangerouslySetInnerHTML={{
         __html: `
->>>>>>> source
         docsearch({
           apiKey: '9177558dc6ad5e773ed3fb2d3e6f9099',
           appId: 'J0T213YR6H',
