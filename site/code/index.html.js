@@ -19,11 +19,7 @@ export default ({ page, site }) =>
           <h1>开发</h1>
           <Marked>{`
 
-<<<<<<< HEAD
 GraphQL 支持许多不同的开发语言. 这个列表包含了一些更流行的服务器端框架,客户端库和一些有用的小东西.
-=======
-Many different programming languages support GraphQL. This list contains some of the more popular server-side frameworks, client libraries, services, and other useful stuff.
->>>>>>> a1c831ecebc93a81818ac8ed6814042ce92cc136
 
 ## 服务器端库
 
